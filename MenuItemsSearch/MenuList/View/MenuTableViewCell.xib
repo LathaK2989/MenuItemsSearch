@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MenuTableViewCell" rowHeight="120" id="krM-Ju-q1W" customClass="MenuTableViewCell" customModule="MenuItemsSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="krM-Ju-q1W" id="94i-qa-z7l">
+                <rect key="frame" x="0.0" y="0.0" width="438" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5U0-kq-Qvp">
+                        <rect key="frame" x="20" y="10" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="5U0-kq-Qvp" secondAttribute="height" multiplier="1:1" id="Ot6-lx-BGB"/>
+                            <constraint firstAttribute="width" priority="999" constant="100" id="qhc-Vn-noH"/>
+                        </constraints>
+                    </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="WNK-u0-eeC">
+                        <rect key="frame" x="60" y="50" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VX-YZ-uLE">
+                        <rect key="frame" x="130" y="10" width="298" height="100"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3VX-YZ-uLE" firstAttribute="top" secondItem="94i-qa-z7l" secondAttribute="top" constant="10" id="1kQ-rd-2cZ"/>
+                    <constraint firstItem="WNK-u0-eeC" firstAttribute="centerX" secondItem="5U0-kq-Qvp" secondAttribute="centerX" id="BRO-rK-Oos"/>
+                    <constraint firstItem="3VX-YZ-uLE" firstAttribute="bottom" secondItem="5U0-kq-Qvp" secondAttribute="bottom" id="CCP-GG-mu1"/>
+                    <constraint firstAttribute="bottom" secondItem="5U0-kq-Qvp" secondAttribute="bottom" constant="10" id="G39-GB-ypf"/>
+                    <constraint firstAttribute="trailing" secondItem="3VX-YZ-uLE" secondAttribute="trailing" constant="10" id="Gga-X0-n9u"/>
+                    <constraint firstItem="5U0-kq-Qvp" firstAttribute="leading" secondItem="94i-qa-z7l" secondAttribute="leading" constant="20" symbolic="YES" id="LL4-wL-kzP"/>
+                    <constraint firstItem="3VX-YZ-uLE" firstAttribute="leading" secondItem="5U0-kq-Qvp" secondAttribute="trailing" constant="10" id="jMM-RE-cFv"/>
+                    <constraint firstItem="WNK-u0-eeC" firstAttribute="centerY" secondItem="5U0-kq-Qvp" secondAttribute="centerY" id="jgL-gz-PXM"/>
+                    <constraint firstItem="5U0-kq-Qvp" firstAttribute="top" secondItem="94i-qa-z7l" secondAttribute="top" constant="10" id="vSE-ME-fEG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityIndicator" destination="WNK-u0-eeC" id="dKb-Yo-S3w"/>
+                <outlet property="recceipeImageView" destination="5U0-kq-Qvp" id="2Wv-e4-gO9"/>
+                <outlet property="receipeDescription" destination="3VX-YZ-uLE" id="k4k-Zn-G3j"/>
+            </connections>
+            <point key="canvasLocation" x="274.80916030534348" y="-25.35211267605634"/>
+        </tableViewCell>
+    </objects>
+</document>
